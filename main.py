@@ -51,4 +51,5 @@ insert_to(conn, "tyontekija", ["name"], ["Batman"]) # should use list instead of
 conn.close()
 
 # add comments here
+# lisää comments
 
