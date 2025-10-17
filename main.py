@@ -41,6 +41,7 @@ def insert_to(conn: sqlite3.Connection, table, columns: list, values: list) -> N
     try: 
         cursor.execute(sql, values)
         conn.commit()
+        #lisää teksti täällä
     # except(): jos halutaan logata tiedostoon tai konsoliin jotain 
     finally:
         cursor.close()
@@ -48,3 +49,4 @@ def insert_to(conn: sqlite3.Connection, table, columns: list, values: list) -> N
 
 insert_to(conn, "tyontekija", ["name"], ["Batman"]) # should use list instead of tuple
 conn.close()
+
