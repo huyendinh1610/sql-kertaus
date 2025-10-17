@@ -47,8 +47,8 @@ def insert_to(conn: sqlite3.Connection, table, columns: list, values: list) -> N
         cursor.close()
         #conn.close()
 
-insert_to(conn, "tyontekija", ["name"], ["Batman"]) # should use list instead of tuple
-conn.close()
+# insert_to(conn, "tyontekija", ["name"], ["Batman"]) # should use list instead of tuple
+
 
 # add comments here
 # lisää comments
@@ -57,3 +57,15 @@ conn.close()
 # 5 komentti
 # 6 dsfjdlj
 
+def update_table(): # lisää parametreina esim. table, name, address tms. 
+    cursor.execute("update tyontekija set name =? where name =?", ("hello", "Batman"))
+    conn.commit()
+
+def delete_from_table(table, name):
+    sql = f"delete from {table} where name=?"
+    cursor.execute(sql, (name, ))
+    conn.commit()
+
+#update_table()
+delete_from_table("tyontekija", "AkuAnkka1")
+conn.close()
