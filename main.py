@@ -50,3 +50,5 @@ def insert_to(conn: sqlite3.Connection, table, columns: list, values: list) -> N
 insert_to(conn, "tyontekija", ["name"], ["Batman"]) # should use list instead of tuple
 conn.close()
 
+# add comments here
+
