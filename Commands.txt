@@ -1,0 +1,27 @@
+>winget install --id microsoft.edit (install app with id = microsoft.edit)
+>winget install --id=astral-sh.uv -e (install uv)
+
+---
+uv init: luo .git-kansion, ja alustaa uv:n
+>uv add pandas numpy: luo .env-kansion ja asentaa 
+>uv remove pandas
+uv run <tiedoston_nimi>: käynnistää venvin ja ohjelman (sukee venvin)
+>uv tree
+>uv sync: create .env and install all requirements from .toml file
+
+
+----
+Customer churn: happen when customers stop using a service within a given time
+https://datatas.com/churn-analysis-in-sql/
+Why does churn matter?
+👉 Acquiring a new customer costs 5x more than retaining an existing one. 😱
+👉 A 5% increase in retention can boost profits by 25–95%! 📈
+👉 Churn analysis helps businesses take action before customers leave! 🚀
+-> 
+1. create churn rate
+2. compare churn rate by demographics, services, and financial factors
+3. identify key that distinguish churned customers
+4. create a churn customer profile summarizing high-risk segments
+
+skimpy: provides detailed summary statistics for each column in dataframe
+skim(data_frame) # after importing data
